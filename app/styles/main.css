@@ -20,12 +20,6 @@ body {
   margin: 20px 0
 }
 
-.page:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .wrapper {
   max-width: 1160px;
   margin: 0 auto;
@@ -56,23 +50,6 @@ body {
   background: #A9A9A9;
   color: #000000;
   min-height: 600px;
-}
-
-a{
-  display: block;
-  text-align:center;
-  margin: 10px auto;
-  width: 100%;
-  color: ##A9A9A9;
-}
-
-@media only screen and (max-width: 768px) {
-  .sidebar {
-    display: none;
-  }
-  .content {
-    margin-left: 0;
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {
