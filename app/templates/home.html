@@ -10,7 +10,11 @@
 
     <section class="sidebar">
  <h1>Bloc Chat</h1>
- <button type="button" ng-click="home.addRoom()">New Room</button>
+
+ <div ng-controller="ModalCtrl as modal" class="modal-demo">
+ <button type="button" ng-click="modal.open()">New Room</button>
+</div>
+
  <ul ng-repeat="room in home.Rooms">
           <li>
              {{ room.$value }}
