@@ -9,7 +9,7 @@
          };
 
          this.cancel = function () {
-           $uibModalInstance.dismiss('cancel');
+           $uibModalInstance.close('cancel');
          };
 
    }

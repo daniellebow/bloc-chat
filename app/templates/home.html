@@ -1,29 +1,25 @@
 <div class="page">
   <div class="wrapper">
 
-
      <div class="content-wrapper">
       <main class="content">
     </main>
     </div>
 
 
-    <section class="sidebar">
- <h1>Bloc Chat</h1>
+   <section class="sidebar">
+      <h1>Bloc Chat</h1>
 
- <div ng-controller="ModalCtrl as modal" class="modal-demo">
- <button type="button" ng-click="modal.open()">New Room</button>
+ <div ng-controller="ModalCtrl as modal">
+   <button type="button" ng-click="modal.open()">New Room</button>
 </div>
 
- <ul ng-repeat="room in home.Rooms">
+      <ul ng-repeat="room in home.Rooms">
           <li>
              {{ room.$value }}
           </li>
       </ul>
     </section>
-
-
-
 
    </div>
  </div>
