@@ -93,3 +93,11 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar li:hover {
    background-color: #D2691E;
 }
+
+.modal-backdrop {
+  opacity: 0.5;
+}
+
+.modal-window{
+  opacity:1;
+}

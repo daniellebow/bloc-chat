@@ -1,11 +1,10 @@
 (function() {
    function ModalCtrl ($uibModal, $log, $document) {
       var modal = this;
-      modal.animationsEnabled=true;
 
         modal.open = function (size) {
           var modalInstance = $uibModal.open({
-            animation: modal.animationsEnabled,
+            animation: 'true',
             ariaLabelledBy: 'modal-title',
             ariaDescribedBy: 'modal-body',
             templateUrl: '../templates/modal.html',
