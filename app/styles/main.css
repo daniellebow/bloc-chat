@@ -16,6 +16,28 @@ body {
   color: #000000;
 }
 
+.msg-content {
+  text-align: center;
+  display: block;
+  margin: 10px;
+  padding: 0 10px 0 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  background-color: #A9A9A9;
+}
+
+.msg-content h4 {
+text-align: left;
+}
+
+.msg-content h5 {
+text-align: left;
+}
+
+.msg-content h6 {
+text-align: right;
+}
+
 .page {
   margin: 20px 0
 }
@@ -90,9 +112,6 @@ h1, h2, h3, h4, h5, h6 {
    padding-left: 1vh;
 }
 
-.sidebar li:hover {
-   background-color: #D2691E;
-}
 
 .modal-backdrop {
   opacity: 0.5;

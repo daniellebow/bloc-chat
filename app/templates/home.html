@@ -3,9 +3,16 @@
 
      <div class="content-wrapper">
       <main class="content">
+        <div class="room-name" ng-click="home.selectRoom(room)">
+          <h1>{{home.currentRoom.$value}}</h1>
+        </div>
+        <div class="msg-content" ng-repeat="message in home.messages">
+          <h4>{{message.username}}</h4>
+          <h5>{{message.content}}</h5>
+          <h6>{{message.sentAt}}</h6>
+        </div>
     </main>
     </div>
-
 
    <section class="sidebar">
       <h1>Bloc Chat</h1>
@@ -16,7 +23,8 @@
 
       <ul ng-repeat="room in home.Rooms">
           <li>
-             {{ room.$value }}
+            <button type="button" class="btn btn-default room-list" ng-click="home.selectRoom(room)">
+              <span>{{room.$value}}</span></button>
           </li>
       </ul>
     </section>
