@@ -13,7 +13,25 @@
             templateUrl: '/templates/home.html'
         });
 }
-    angular
-      .module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap'])
-      .config(config);
-})();
+
+  function BlocChatCookies($cookies, $uibModal) {
+    var currentUser = $cookies.get('blocChatCurrentUser');
+    if (!currentUser || currentUser === '') {
+      $uibModal.open({
+       animation: 'true',
+       ariaLabelledBy: 'modal-title',
+       ariaDescribedBy: 'modal-body',
+       templateUrl: '../templates/UserNameModal.html',
+       controller: 'UserNameInstanceCtrl',
+       controllerAs: 'un',
+       size: 'sm',
+     });
+    }
+  }
+
+
+angular
+         .module('blocChat', ['ui.router', 'ui.bootstrap', 'firebase', 'ngCookies'])
+         .config(config)
+         .run(['$cookies', '$uibModal', BlocChatCookies]);
+ })();
