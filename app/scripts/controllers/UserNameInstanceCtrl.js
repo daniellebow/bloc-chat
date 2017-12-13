@@ -6,7 +6,6 @@
            $uibModalInstance.close(this.userName);
          };
    }
-
    angular
       .module('blocChat')
       .controller('UserNameInstanceCtrl', ['$uibModalInstance', UserNameInstanceCtrl]);
