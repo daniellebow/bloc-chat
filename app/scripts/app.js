@@ -28,9 +28,6 @@
        backdrop: 'static',
        keyboard: false,
      });
-     modalInstance.result.then(function(currentUser){
-        $cookies.put('blocChatCurrentUser', currentUser);
-      })
   }
 }
 
