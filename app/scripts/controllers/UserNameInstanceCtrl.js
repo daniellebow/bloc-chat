@@ -1,12 +1,11 @@
 
 (function () {
    function UserNameInstanceCtrl ($uibModalInstance, $cookies) {
-
        this.ok = function (userName) {
-        if (!userName || userName==" "){
+        if (!this.userName || this.userName==" "){
         alert("You must enter a username");
       }else{
-        $cookies.put('blocChatCurrentUser', userName);
+        $cookies.put('blocChatCurrentUser', this.userName);
         $uibModalInstance.close();
       }
     };
