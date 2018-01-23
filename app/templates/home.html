@@ -6,11 +6,17 @@
         <div class="room-name" ng-click="home.selectRoom(room)">
           <h1>{{home.currentRoom.$value}}</h1>
         </div>
+        <div class="message-field">
+        <input type="text" name="input" class="message-box" ng-model="home.message.content">
+        <button class="btn-new-message" type="button" ng-click="home.sendMessage()">Send message</button>
+    </div>
         <div class="msg-content" ng-repeat="message in home.messages">
           <h4>{{message.username}}</h4>
           <h5>{{message.content}}</h5>
           <h6>{{message.sentAt}}</h6>
         </div>
+
+
     </main>
     </div>
 
